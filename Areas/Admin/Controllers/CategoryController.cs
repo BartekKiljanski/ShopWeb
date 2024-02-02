@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShopWeb.DataAccess.Data;
 using ShopWeb.DataAccess.Repository;
 using ShopWeb.DataAccess.Repository.IRepository;
 using ShopWeb.Models;
+using ShopWeb.Utility;
 
 
 namespace ShopWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         
@@ -16,6 +19,7 @@ namespace ShopWeb.Areas.Admin.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+
         public IActionResult Index()
         {
             List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
