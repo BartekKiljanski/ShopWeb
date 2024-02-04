@@ -10,3 +10,4 @@ C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\refint\ShopWeb.Utility.dll
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.pdb
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ref\ShopWeb.Utility.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.sourcelink.json

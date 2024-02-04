@@ -17,3 +17,4 @@ C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.DataAccess\
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.DataAccess\obj\Debug\net8.0\ShopWeb.DataAccess.pdb
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.DataAccess\obj\Debug\net8.0\ShopWeb.DataAccess.genruntimeconfig.cache
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.DataAccess\obj\Debug\net8.0\ref\ShopWeb.DataAccess.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.DataAccess\obj\Debug\net8.0\ShopWeb.DataAccess.sourcelink.json

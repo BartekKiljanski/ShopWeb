@@ -12,3 +12,4 @@ C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.pdb
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.genruntimeconfig.cache
 C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ref\ShopWeb.Models.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.sourcelink.json
