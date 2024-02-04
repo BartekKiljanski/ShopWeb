@@ -1,0 +1,14 @@
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\bin\Debug\net8.0\ShopWeb.Models.deps.json
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\bin\Debug\net8.0\ShopWeb.Models.runtimeconfig.json
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\bin\Debug\net8.0\ShopWeb.Models.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\bin\Debug\net8.0\ShopWeb.Models.pdb
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.csproj.AssemblyReference.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.AssemblyInfoInputs.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.AssemblyInfo.cs
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.csproj.CoreCompileInputs.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\refint\ShopWeb.Models.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.pdb
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ShopWeb.Models.genruntimeconfig.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Models\obj\Debug\net8.0\ref\ShopWeb.Models.dll

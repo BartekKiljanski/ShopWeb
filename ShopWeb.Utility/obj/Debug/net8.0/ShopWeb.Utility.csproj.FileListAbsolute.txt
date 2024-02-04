@@ -1,0 +1,12 @@
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\bin\Debug\net8.0\ShopWeb.Utility.deps.json
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\bin\Debug\net8.0\ShopWeb.Utility.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\bin\Debug\net8.0\ShopWeb.Utility.pdb
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.csproj.AssemblyReference.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.AssemblyInfoInputs.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.AssemblyInfo.cs
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.csproj.CoreCompileInputs.cache
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\refint\ShopWeb.Utility.dll
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ShopWeb.Utility.pdb
+C:\Users\bkiljanski\source\repos\BartekKiljanski\EcomerceApp\ShopWeb.Utility\obj\Debug\net8.0\ref\ShopWeb.Utility.dll
