@@ -5,13 +5,11 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb", "ShopWeb.csproj", "{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWebRazor_Temp", "..\ShopWebRazor_Temp\ShopWebRazor_Temp.csproj", "{09CE34F4-130D-4E46-9BB8-9CBBC64D395B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.DataAccess", "..\ShopWeb.DataAccess\ShopWeb.DataAccess.csproj", "{93A07A70-28A8-4B19-8A31-D42815B3BEFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWeb.DataAccess", "..\ShopWeb.DataAccess\ShopWeb.DataAccess.csproj", "{93A07A70-28A8-4B19-8A31-D42815B3BEFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Models", "..\ShopWeb.Models\ShopWeb.Models.csproj", "{EF96C2BA-5511-4871-A6B6-89C12ECA7C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWeb.Models", "..\ShopWeb.Models\ShopWeb.Models.csproj", "{EF96C2BA-5511-4871-A6B6-89C12ECA7C37}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWeb.Utility", "..\ShopWeb.Utility\ShopWeb.Utility.csproj", "{0E6D049D-F1DE-468E-8558-163C6A2A8532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Utility", "..\ShopWeb.Utility\ShopWeb.Utility.csproj", "{0E6D049D-F1DE-468E-8558-163C6A2A8532}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09CE34F4-130D-4E46-9BB8-9CBBC64D395B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09CE34F4-130D-4E46-9BB8-9CBBC64D395B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09CE34F4-130D-4E46-9BB8-9CBBC64D395B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09CE34F4-130D-4E46-9BB8-9CBBC64D395B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93A07A70-28A8-4B19-8A31-D42815B3BEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93A07A70-28A8-4B19-8A31-D42815B3BEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93A07A70-28A8-4B19-8A31-D42815B3BEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
