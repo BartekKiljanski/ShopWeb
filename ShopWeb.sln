@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb", "ShopWeb.csproj", "{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb", "src\ShopWeb\ShopWeb.csproj", "{51BCFFB6-0EFD-4DA9-8EEC-F5C18D30DD07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.DataAccess", "..\ShopWeb.DataAccess\ShopWeb.DataAccess.csproj", "{93A07A70-28A8-4B19-8A31-D42815B3BEFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.DataAccess", "src\ShopWeb.DataAccess\ShopWeb.DataAccess.csproj", "{93A07A70-28A8-4B19-8A31-D42815B3BEFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Models", "..\ShopWeb.Models\ShopWeb.Models.csproj", "{EF96C2BA-5511-4871-A6B6-89C12ECA7C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Models", "src\ShopWeb.Models\ShopWeb.Models.csproj", "{EF96C2BA-5511-4871-A6B6-89C12ECA7C37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Utility", "..\ShopWeb.Utility\ShopWeb.Utility.csproj", "{0E6D049D-F1DE-468E-8558-163C6A2A8532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopWeb.Utility", "src\ShopWeb.Utility\ShopWeb.Utility.csproj", "{0E6D049D-F1DE-468E-8558-163C6A2A8532}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
