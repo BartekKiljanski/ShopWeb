@@ -62,7 +62,7 @@ namespace ShopWeb.Areas.Admin.Controllers
             _unitOfWork.OrderHeader.Update(orderHeaderFromDb);
             _unitOfWork.Save();
 
-            TempData["Success"] = "Order Details Updated Successfully.";
+            TempData["Success"] = "Szczegóły zamówienia zostały pomyślnie zaktualizowane.";
 
 
             return RedirectToAction(nameof(Details), new { orderId = orderHeaderFromDb.Id });
@@ -75,7 +75,7 @@ namespace ShopWeb.Areas.Admin.Controllers
         {
             _unitOfWork.OrderHeader.UpdateStatus(OrderVM.OrderHeader.Id, SD.StatusInProcess);
             _unitOfWork.Save();
-            TempData["Success"] = "Order Details Updated Successfully.";
+            TempData["Success"] = "Szczegóły zamówienia zostały pomyślnie zaktualizowane.";
             return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id });
         }
 
@@ -96,7 +96,7 @@ namespace ShopWeb.Areas.Admin.Controllers
 
             _unitOfWork.OrderHeader.Update(orderHeader);
             _unitOfWork.Save();
-            TempData["Success"] = "Order Shipped Successfully.";
+            TempData["Success"] = "Zamówienie zostało wysłane";
             return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id });
         }
         [HttpPost]
@@ -124,7 +124,7 @@ namespace ShopWeb.Areas.Admin.Controllers
                 _unitOfWork.OrderHeader.UpdateStatus(orderHeader.Id, SD.StatusCancelled, SD.StatusCancelled);
             }
             _unitOfWork.Save();
-            TempData["Success"] = "Order Cancelled Successfully.";
+            TempData["Success"] = "Zamówienie zostało pomyślnie anulowane.";
             return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id });
 
         }

@@ -58,7 +58,7 @@ namespace ShopWeb.Areas.Admin.Controllers
                 }
                 
                 _unitOfWork.Save();
-                TempData["success"] = "Company created successfully";
+                TempData["success"] = "Firma utworzona pomyślnie";
                 return RedirectToAction("Index");
             }
             else

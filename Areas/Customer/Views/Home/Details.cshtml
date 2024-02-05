@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6 col-md-2 offset-lg-1 pb-1">
                         <a asp-action="Index" class="btn btn-outline-primary bg-gradient mb-5 fw-semibold btn-sm text-uppercase">
-                            <small>Back to home</small>
+                            <small>Wróc do strony głównej</small>
                         </a>
                     </div>
                 </div>
@@ -52,11 +52,11 @@
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                    <span class="visually-hidden">Poprzednie</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                    <span class="visually-hidden">Następne</span>
                                 </button>
                             </div>
 
@@ -80,7 +80,7 @@
                         </div>
                         <div class="row ps-2">
                             <h6 class="text-dark text-opacity-50  pb-2">
-                                List Price:
+                                Cena:
                                 <span class="text-decoration-line-through">
                                     @Model.Product.ListPrice.ToString("c")
                                 </span>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="row text-center ps-2">
                             <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
-                                <div class="text-dark text-opacity-50 fw-semibold">Quantity</div>
+                                <div class="text-dark text-opacity-50 fw-semibold">Ilość</div>
                             </div>
                             <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
                                 <div class="text-dark text-opacity-50 fw-semibold">1-50</div>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="row text-center ps-2">
                             <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
-                                <div>Price</div>
+                                <div>Cena</div>
                             </div>
                             <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
                                 <div>@Model.Product.Price.ToString("c")</div>
@@ -122,7 +122,7 @@
                                 <div class="input-group mb-3">
                                     <span class="input-group-text bg-primary text-white border-0 fw-semibold"
                                           id="inputGroup-sizing-default">
-                                        Count
+                                        Liczba
                                     </span>
                                     <input asp-for="Count" type="number" value="1" class="form-control text-end"
                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
@@ -134,7 +134,7 @@
                             <div class="col-12 col-md-6 pb-1">
                                 <button type="submit"
                                         class="btn btn-primary bg-gradient  w-100 py-2 text-uppercase fw-semibold">
-                                    Add to Cart
+                                    Dodaj do koszyka
                                 </button>
                             </div>
                         </div>

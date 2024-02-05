@@ -112,7 +112,7 @@ namespace ShopWeb.Areas.Admin.Controllers
                 }
 
 
-                TempData["success"] = "Product created/updated successfully";
+                TempData["success"] = "Produkt został pomyślnie utworzony/zaktualizowany";
                 return RedirectToAction("Index");
             }
             else
@@ -148,7 +148,7 @@ namespace ShopWeb.Areas.Admin.Controllers
                 _unitOfWork.ProductImage.Remove(imageToBeDeleted);
                 _unitOfWork.Save();
 
-                TempData["success"] = "Deleted successfully";
+                TempData["success"] = "Usunięto pomyślnie";
             }
 
             return RedirectToAction(nameof(Upsert), new { id = productId });

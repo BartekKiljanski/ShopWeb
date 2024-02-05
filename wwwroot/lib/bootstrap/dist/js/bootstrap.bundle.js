@@ -6544,13 +6544,13 @@
   const EVENT_FOCUSOUT = `focusout${EVENT_KEY}`;
   const EVENT_HIDE = `hide${EVENT_KEY}`;
   const EVENT_HIDDEN = `hidden${EVENT_KEY}`;
-  const EVENT_SHOW = `show${EVENT_KEY}`;
+  const EVENT_SHOW = `pokaż${EVENT_KEY}`;
   const EVENT_SHOWN = `shown${EVENT_KEY}`;
   const CLASS_NAME_FADE = 'fade';
   const CLASS_NAME_HIDE = 'hide'; // @deprecated - kept here only for backwards compatibility
 
-  const CLASS_NAME_SHOW = 'show';
-  const CLASS_NAME_SHOWING = 'showing';
+  const CLASS_NAME_SHOW = 'pokaż';
+    const CLASS_NAME_SHOWING = 'Wyświetlanie';
   const DefaultType = {
     animation: 'boolean',
     autohide: 'boolean',
