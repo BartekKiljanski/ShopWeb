@@ -1,16 +1,107 @@
-Aplikacja "KiljanFlix" oparta jest na modelu MVC (Model-View-Controller), korzystając z ASP.NET Core jako frameworku do budowy responsywnego i skalowalnego interfejsu użytkownika. Wykorzystanie architektury N-Tier oraz wzorca repozytorium umożliwia modularną konstrukcję aplikacji, co ułatwia zarządzanie kodem oraz rozszerzanie systemu o nowe funkcjonalności.
-Główne cechy systemu obejmują:
-•	Zarządzanie kategoriami i produktami: Administracja kategoriami i produktami pozwala na skuteczne organizowanie katalogu filmów.
-•	Zarządzanie firmami: Funkcjonalność ta umożliwia dodawanie, edycję oraz usuwanie firm, co jest istotne dla zarządzania partnerami biznesowymi.
-•	Zarządzanie kontami użytkowników: System umożliwia tworzenie, edycję oraz usuwanie kont użytkowników, zapewniając elastyczne zarządzanie dostępem do aplikacji.
-•	Bezpieczeństwo i autentykacja: Integracja z ASP.NET Identity gwarantuje silne mechanizmy autentykacji i autoryzacji, w tym logowanie za pomocą emaila i hasła, a także poprzez konta Google i Facebook.
-•	Obsługa zamówień: Użytkownicy mogą przeglądać filmy, dodawać je do koszyka i dokonywać płatności za pomocą Stripe, co stanowi kompleksowe rozwiązanie e-commerce.
-•	Komunikacja z użytkownikami: System oferuje funkcjonalności takie jak powiadomienia email, umożliwiając efektywną komunikację z klientami.
-Projekt wykorzystuje różnorodne narzędzia i technologie, potwierdzając swoją aktualność i zaawansowanie:
-•	Entity Framework: Do operacji na bazie danych z wykorzystaniem migracji "code first".
-•	Identity Framework: Do zaawansowanego zarządzania użytkownikami i ich autentykacji.
-•	Stripe: Dla obsługi płatności online.
-•	Integracja z usługami Google i Facebook: Dla alternatywnych metod logowania.
-•	Sesje w ASP.NET Core: Do zarządzania stanem użytkownika.
-•	TempData i View Components: Dla zaawansowanej interakcji z użytkownikiem.
-•	Data Seeding i wdrażanie do Azure: Do inicjalizacji danych i hostingu aplikacji w chmurze.
+# ShopWeb / KiljanFlix
+
+Prosty sklep internetowy napisany w ASP.NET Core MVC. Projekt powstał głównie do nauki warstwowej aplikacji webowej, pracy z bazą danych i automatyzacji testów UI.
+
+Aplikacja działa jak mały sklep z filmami: jest panel klienta, koszyk, składanie zamówienia oraz panel administracyjny do zarządzania produktami, kategoriami, firmami i użytkownikami.
+
+## Co jest w projekcie
+
+- ASP.NET Core MVC / Razor Pages
+- Entity Framework Core i migracje Code First
+- SQL Server
+- ASP.NET Identity
+- Repository Pattern + Unit of Work
+- Stripe jako przykład integracji płatności
+- SendGrid jako przykład wysyłki maili
+- podstawowy seed danych po starcie aplikacji
+
+Testy automatyczne do tej aplikacji są w osobnym repozytorium:
+
+https://github.com/BartekKiljanski/SeleniumGameShopQA
+
+## Struktura
+
+```text
+src/
+  ShopWeb/             aplikacja MVC
+  ShopWeb.DataAccess/  DbContext, migracje, repozytoria
+  ShopWeb.Models/      modele i ViewModele
+  ShopWeb.Utility/     klasy pomocnicze, np. Stripe/Email
+```
+
+## Uruchomienie lokalnie
+
+Wymagania:
+
+- .NET 8 SDK
+- SQL Server albo LocalDB
+
+Domyślny connection string jest w `src/ShopWeb/appsettings.json`:
+
+```json
+"DefaultConnection": "Server=(localdb)\\MojLocal;Database=ShopBook;Trusted_Connection=True;TrustServerCertificate=True"
+```
+
+Jeśli używasz innej instancji SQL Servera, najprościej zmienić connection string lokalnie albo nadpisać go zmienną środowiskową:
+
+```bash
+ConnectionStrings__DefaultConnection="Server=localhost;Database=ShopBook;Trusted_Connection=True;TrustServerCertificate=True"
+```
+
+Start aplikacji:
+
+```bash
+dotnet restore
+dotnet run --project src/ShopWeb/ShopWeb.csproj
+```
+
+Po starcie aplikacja sama wykonuje inicjalizację bazy przez `DbInitializer`.
+
+## Docker
+
+Dodałem też prostą konfigurację Dockera, żeby łatwiej odpalić projekt bez lokalnego SQL Servera.
+
+```bash
+docker compose up --build
+```
+
+Po uruchomieniu:
+
+- aplikacja: `http://localhost:8080`
+- SQL Server: `localhost:14333`
+
+W `docker-compose.yml` connection string jest przekazywany przez zmienną:
+
+```yaml
+ConnectionStrings__DefaultConnection
+```
+
+## Konfiguracja zewnętrzna
+
+W repo nie trzymam prawdziwych sekretów. Klucze do Stripe, SendGrid i Facebook Login najlepiej ustawiać przez zmienne środowiskowe:
+
+```bash
+Stripe__SecretKey=""
+Stripe__PublishableKey=""
+SendGrid__SecretKey=""
+Authentication__Facebook__AppId=""
+Authentication__Facebook__AppSecret=""
+```
+
+Facebook Login włącza się tylko wtedy, gdy `AppId` i `AppSecret` są ustawione.
+
+## Testy
+
+Do testów UI używam repozytorium `SeleniumGameShopQA`. Najczęściej odpalam najpierw aplikację, a później testy Selenium/SpecFlow na działającym środowisku.
+
+Przykład:
+
+```bash
+docker compose up --build
+```
+
+A potem w repo z testami:
+
+```bash
+dotnet test
+```

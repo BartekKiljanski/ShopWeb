@@ -1,0 +1,36 @@
+services:
+  shopweb-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Your_strong_password123!"
+    ports:
+      - "14333:1433"
+    volumes:
+      - shopweb-db:/var/opt/mssql
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -C -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  shopweb:
+    build:
+      context: .
+    depends_on:
+      shopweb-db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Server=shopweb-db,1433;Database=ShopBook;User Id=sa;Password=Your_strong_password123!;TrustServerCertificate=True"
+      Stripe__SecretKey: ""
+      Stripe__PublishableKey: ""
+      SendGrid__SecretKey: ""
+      Authentication__Facebook__AppId: ""
+      Authentication__Facebook__AppSecret: ""
+    ports:
+      - "8080:8080"
+
+volumes:
+  shopweb-db:
